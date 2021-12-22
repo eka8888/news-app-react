@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Montserrat:wght@500&display=swap');
+body {
+    background-color: rgb(58, 54, 54);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1400px;
+}
+
+.header {
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: start;
+}
+
+.header2 {
+    color: whitesmoke;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    width: 40vw;
+    height: 5vh;
+    background-color: rgb(90, 83, 83);
+    padding-top: 10px;
+}
+
+.form {
+    text-align: center;
+}
+
+.form-input {
+    width: 25vw;
+    height: 5vh;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.news-item {
+    width: 60vw;
+    height: 30rem;
+}
+
+.row {
+    overflow: hidden;
+    padding: 16px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #f1f1f1;
+    height: 28rem;
+    padding-top: 20px;
+}
+
+.row:hover {
+    box-shadow: 0 8px 12px 0 #f1f1f1;
+}
+
+.image {
+    width: 30%;
+    height: 35%;
+    object-fit: cover;
+}
+
+.btn {
+    background-color: rgb(68, 186, 216);
+    width: 90px;
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.2, 1.5);
+}
+
+.title {
+    background-color: #f1f1f1;
+    font-size: 1.4rem;
+}
+
+.date {
+    background-color: #f1f1f1;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content {
+    background-color: #f1f1f1;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+    .title {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 0.8rem;
+    }
+    .date {
+        font-size: 0.7rem;
+    }
+    .content {
+        font-size: 0.7rem;
+    }
+    .image {
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .title {
+        font-size: 0.7rem;
+    }
+    .date {
+        font-size: 0.6rem;
+    }
+    .content {
+        font-size: 0.5rem;
+    }
+    .image {
+        height: 25%;
+    }
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s ease infinite;
+    margin-top: 5rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.notTitle {
+    font-size: 34px;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.notText {
+    font-size: 24px;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.notLink {
+    font-size: 24px;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    color: steelblue;
+}
+
+.notLink:hover {
+    text-shadow: 2px 2px 5px rgb(63, 117, 161);
+}
+
+.noMatch {
+    font-size: 26px;
+    color: rgb(175, 175, 175);
+    margin-top: 5rem;
+}
+
+.footer {
+    color: rgb(175, 175, 175);
+    margin-top: 2rem;
+}
